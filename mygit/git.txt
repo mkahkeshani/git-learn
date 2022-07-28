@@ -1,0 +1,156 @@
+FlutterProgrammer@DESKTOP-BTH6NT0 MINGW64 ~ (master)
+$ mkdir git-learn
+
+FlutterProgrammer@DESKTOP-BTH6NT0 MINGW64 ~ (master)
+$ cd git-learn
+
+FlutterProgrammer@DESKTOP-BTH6NT0 MINGW64 ~/git-learn (master)
+$ git init
+Initialized empty Git repository in C:/Users/FlutterProgrammer/git-learn/.git/
+
+FlutterProgrammer@DESKTOP-BTH6NT0 MINGW64 ~/git-learn (master)
+$ git config
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <type>     value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+
+FlutterProgrammer@DESKTOP-BTH6NT0 MINGW64 ~/git-learn (master)
+$ git config user.email
+qsdss@gmail.com
+
+FlutterProgrammer@DESKTOP-BTH6NT0 MINGW64 ~/git-learn (master)
+$ git config user.email mohammadkahkeshani@gmail.com
+
+FlutterProgrammer@DESKTOP-BTH6NT0 MINGW64 ~/git-learn (master)
+$ git config user.name mohammad
+
+FlutterProgrammer@DESKTOP-BTH6NT0 MINGW64 ~/git-learn (master)
+$ ^C
+
+FlutterProgrammer@DESKTOP-BTH6NT0 MINGW64 ~/git-learn (master)
+$ pwd
+/c/Users/FlutterProgrammer/git-learn
+
+FlutterProgrammer@DESKTOP-BTH6NT0 MINGW64 ~/git-learn (master)
+$ touch my-file.txt
+
+FlutterProgrammer@DESKTOP-BTH6NT0 MINGW64 ~/git-learn (master)
+$ ls
+my-file.txt
+
+FlutterProgrammer@DESKTOP-BTH6NT0 MINGW64 ~/git-learn (master)
+$ git add my-file.txt
+
+FlutterProgrammer@DESKTOP-BTH6NT0 MINGW64 ~/git-learn (master)
+$ ^C
+
+FlutterProgrammer@DESKTOP-BTH6NT0 MINGW64 ~/git-learn (master)
+$ ^C
+
+FlutterProgrammer@DESKTOP-BTH6NT0 MINGW64 ~/git-learn (master)
+$ touch aa.txt
+
+FlutterProgrammer@DESKTOP-BTH6NT0 MINGW64 ~/git-learn (master)
+$ pwd
+/c/Users/FlutterProgrammer/git-learn
+
+FlutterProgrammer@DESKTOP-BTH6NT0 MINGW64 ~/git-learn (master)
+$ ls
+aa.txt  my-file.txt
+
+FlutterProgrammer@DESKTOP-BTH6NT0 MINGW64 ~/git-learn (master)
+$ git add aa.txt
+
+FlutterProgrammer@DESKTOP-BTH6NT0 MINGW64 ~/git-learn (master)
+$ touch bbbb.txt
+
+FlutterProgrammer@DESKTOP-BTH6NT0 MINGW64 ~/git-learn (master)
+$ git add bbbb.txt
+
+FlutterProgrammer@DESKTOP-BTH6NT0 MINGW64 ~/git-learn (master)
+$ git add bbbb.txt
+
+FlutterProgrammer@DESKTOP-BTH6NT0 MINGW64 ~/git-learn (master)
+$ pwd
+/c/Users/FlutterProgrammer/git-learn
+
+FlutterProgrammer@DESKTOP-BTH6NT0 MINGW64 ~/git-learn (master)
+$ git blame
+usage: git blame [<options>] [<rev-opts>] [<rev>] [--] <file>
+
+    <rev-opts> are documented in git-rev-list(1)
+
+    --incremental         show blame entries as we find them, incrementally
+    -b                    do not show object names of boundary commits (Default: off)
+    --root                do not treat root commits as boundaries (Default: off)
+    --show-stats          show work cost statistics
+    --progress            force progress reporting
+    --score-debug         show output score for blame entries
+    -f, --show-name       show original filename (Default: auto)
+    -n, --show-number     show original linenumber (Default: off)
+    -p, --porcelain       show in a format designed for machine consumption
+    --line-porcelain      show porcelain format with per-line commit information
+    -c                    use the same output mode as git-annotate (Default: off)
+    -t                    show raw timestamp (Default: off)
+    -l                    show long commit SHA1 (Default: off)
+    -s                    suppress author name and timestamp (Default: off)
+    -e, --show-email      show author email instead of name (Default: off)
+    -w                    ignore whitespace differences
+    --ignore-rev <rev>    ignore <rev> when blaming
+    --ignore-revs-file <file>
+                          ignore revisions from <file>
+    --color-lines         color redundant metadata from previous line differently
+    --color-by-age        color lines by age
+    --minimal             spend extra cycles to find better match
+    -S <file>             use revisions from <file> instead of calling git-rev-list
+    --contents <file>     use <file>'s contents as the final image
+    -C[<score>]           find line copies within and across files
+    -M[<score>]           find line movements within and across files
+    -L <range>            process only line range <start>,<end> or function :<funcname>
+    --abbrev[=<n>]        use <n> digits to display object names
+
+
+FlutterProgrammer@DESKTOP-BTH6NT0 MINGW64 ~/git-learn (master)
+$
+
