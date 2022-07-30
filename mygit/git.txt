@@ -136,7 +136,7 @@ usage: git blame [<options>] [<rev-opts>] [<rev>] [--] <file>
     -l                    show long commit SHA1 (Default: off)
     -s                    suppress author name and timestamp (Default: off)
     -e, --show-email      show author email instead of name (Default: off)
-    -w                    ignore whitespace differences
+   
     --ignore-rev <rev>    ignore <rev> when blaming
     --ignore-revs-file <file>
                           ignore revisions from <file>
@@ -153,4 +153,5 @@ usage: git blame [<options>] [<rev-opts>] [<rev>] [--] <file>
 
 FlutterProgrammer@DESKTOP-BTH6NT0 MINGW64 ~/git-learn (master)
 $
-
+new line
+new line in practice
