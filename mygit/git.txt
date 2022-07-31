@@ -156,7 +156,7 @@ $
 new line
 new line in practice
 new line added
-edited
+edited 1
  new line 
 new line
 new line
