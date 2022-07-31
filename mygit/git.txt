@@ -157,3 +157,6 @@ new line
 new line in practice
 new line added
 edited
+ new line 
+new line
+new line
