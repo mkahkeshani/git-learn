@@ -156,3 +156,4 @@ $
 new line
 new line in practice
 new line added
+edited
