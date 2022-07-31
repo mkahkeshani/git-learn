@@ -160,3 +160,5 @@ edited
  new line 
 new line
 new line
+new 1
+new 2
