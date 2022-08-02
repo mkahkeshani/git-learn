@@ -153,14 +153,6 @@ usage: git blame [<options>] [<rev-opts>] [<rev>] [--] <file>
 
 FlutterProgrammer@DESKTOP-BTH6NT0 MINGW64 ~/git-learn (master)
 $
-new line
-new line in practice
-new line added
-edited 1
- new line 
-new line
-new line
-new 1
-new 2
-after that added
-new line added
+line 1
+line 2
+line 3
